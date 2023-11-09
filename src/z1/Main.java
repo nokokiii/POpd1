@@ -9,7 +9,7 @@ public class Main {
         Pracownik kierownik = new Pracownik(dyrektor, 20000);
         Pracownik menadzer = new Pracownik(kierownik, 10000);
         Pracownik pracownik = new Pracownik(menadzer, 5000);
-        Pracownik stazysta = new Pracownik(menadzer);
+        Pracownik stazysta = new Pracownik(menadzer,  3600);
 
         assert stazysta.getPensja() == 3600;
         assert pracownik.getPensja() == 5000;

@@ -1,5 +1,6 @@
 package z4;
 
+import z4.panstwa.*;
 import java.util.List;
 
 public class Main {

@@ -1,5 +1,8 @@
 package z2;
 
+import z2.zwierzeta.Pies;
+import z2.zwierzeta.Ryba;
+
 import java.util.List;
 
 public class Main {
@@ -10,10 +13,10 @@ public class Main {
         Ryba ryba = (Ryba) zwierzeta.get(1);
 
         assert pies.getIleNog() == 4;
-        assert pies.getWiek() == 10;
+        assert pies.wiek() == 10;
         assert pies.getImie().equals("Burek");
         assert ryba.getIleNog() == 0;
-        assert ryba.getWiek() == 1;
+        assert ryba.wiek() == 1;
         assert pies.dajGlos().equals("Hau hau");
         assert ryba.dajGlos().equals("Bul bul");
         assert ImienneZwierze.class.isInstance(pies);

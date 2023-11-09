@@ -1,5 +1,9 @@
 package z3;
 
+import z3.postacie.Druid;
+import z3.postacie.Rycerz;
+import z3.postacie.Smok;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Zadanie 3");
@@ -15,7 +19,7 @@ public class Main {
         assert rycerz instanceof Postac;
         assert rycerz instanceof Walczaca;
 
-        Druid druid = new Druid(250, 100);
+        Druid druid = new Druid(250, 1);
 
         assert druid.getPunktyZycia() == 250;
         assert druid.getMana() == 100;
