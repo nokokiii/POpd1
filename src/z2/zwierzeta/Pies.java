@@ -16,6 +16,6 @@ public record Pies(int wiek, String imie) implements Zwierze, ImienneZwierze {
 
     @Override
     public String getImie() {
-        return null;
+        return imie;
     }
 }

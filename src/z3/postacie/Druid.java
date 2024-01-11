@@ -26,6 +26,6 @@ public class Druid extends Postac implements Leczaca {
 
     @Override
     public void atakuj(Postac przeciwnik) {
-        sila -= 10;
+        przeciwnik.setPunktyZycia(przeciwnik.getPunktyZycia() - sila);
     }
 }
